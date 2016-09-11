@@ -1,0 +1,875 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 12px;
+    font-family: Arial, "Microsoft Yahei", "微软雅黑";
+    width: 100%;
+    height: 100%;
+}
+.clear:before,.clear:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.clear{zoom: 1}
+ul,ol{list-style: none}
+a{text-decoration: none}
+h1,h2,h3,h4,h5,h6,b,strong{
+    font-weight: normal;
+    font-size: 12px;
+}
+i,em{font-style: normal}
+img,input,select{
+    border: none;
+    vertical-align: middle;
+}
+
+.center{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*��������*/
+.nav{
+    height: 30px;
+    border-bottom: 1px solid #eeeeee;
+}
+.nav .navBox{
+    height: 30px;
+}
+.nav .navBox ul{
+    float: right;
+}
+.nav .navBox ul li{
+    position: relative;
+    float: left;
+    height: 30px;
+    padding: 0 16px;
+    cursor: pointer;
+}
+.nav .navBox ul li:after{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: block;
+    content: "";
+    height: 20px;
+    border-left: 1px dashed #cccccc;
+}
+.nav .navBox ul li.first:after{
+    border-left: none;
+}
+.nav .navBox ul li.first{
+    border-left: none;
+}
+.nav .navBox ul li.first .wx{
+    background-position: 5px 0;
+}
+.nav .navBox ul li span{
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    margin: 0 auto;
+    background: url("../images/i_wx_single.png") no-repeat;
+    vertical-align: middle;
+}
+.nav .navBox ul li a{
+    height: 30px;
+    line-height: 30px;
+    color: #666666;
+}
+.nav .navBox ul li:hover a{
+    color: #ff6699;
+}
+.nav .navBox ul li.second span{
+    background: url("../images/mls_global140607.png") no-repeat -185px -21px;
+}
+.nav .navBox ul li.second span.qq{
+    width: 22px;
+}
+.nav .navBox ul li.third span{
+    background: url("../images/red_cart.png") no-repeat 5px 0;
+}
+.nav .navBox ul li.second span.order{
+    background-position: -214px -45px;
+}
+.nav .navBox ul li.second span.download{
+    background-position: -160px -45px;
+}
+.nav .navBox ul li.second .em{
+    display: inline-block;
+    width: 5px;
+    height: 3px;
+    vertical-align: middle;
+    background: url("../images/mls_global140607.png") no-repeat -22px -70px;
+}
+.nav .navBox ul li.codeBox{
+    position: relative;
+}
+.nav .navBox ul li.second .code{
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 260px;
+    height: 85px;
+    border: 1px solid #EEEEEE;
+    background-color: white;
+    z-index: 1;
+}
+.nav .navBox ul li.second .code div{
+    float: left;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+.nav .navBox ul li.second .code div img{
+    width: 100%;
+    height: 100%;
+}
+.nav .navBox ul li.second .code h3{
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    padding-top: 10px;
+    color: #ff6699;
+}
+.nav .navBox ul li.second .code p{
+    height: 20px;
+    line-height: 20px;
+}
+/*�Ҳർ����*/
+.fix .fix1,.fix .fix1 .fix1_2{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 88;
+}
+.fix .fix1{
+     width: 38px;
+ }
+.fix .fix1 .fix1-1{
+    position: absolute;
+    right: 0;
+    bottom: 145px;
+    background-color: #f6f6f6;
+    z-index: 999;
+}
+.fix .fix1 .fix1-1 a{
+    display: block;
+    width: 36px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    padding: 22px 0;
+}
+.fix .fix1 .fix1-1 a p{
+    margin-top: 5px;
+    color: #666666;
+}
+.fix .fix1 .fix1-1 .top{
+    border-bottom: none;
+}
+.fix .fix1 .fix1-1 .top span{
+    display: block;
+    width: 34px;
+    height: 16px;
+    background: url("../images/red_cart.png") no-repeat center;
+}
+.fix .fix1 .fix1-1 .bottom span{
+    display: block;
+    width: 36px;
+    height: 16px;
+    background: url("../images/red_im.png") no-repeat center;
+}
+.fix .fix1 .fix1-1 a:hover{
+    background-color: #ff6699;
+}
+.fix .fix1 .fix1-1 a:hover p{
+    color: white;
+}
+.fix .fix1 .fix1-1 .top:hover span{
+    background: url("../images/white_cart.png") no-repeat center;
+}
+.fix .fix1 .fix1-1 .bottom:hover span{
+    background: url("../images/white_im.png") no-repeat center;
+}
+.fix .fix1 .fix1_2{
+    display: block;
+    width: 0;
+    border: none;
+    background-color: #f6f6f6;
+    z-index: 99;
+}
+.fix .fix1 .fix1_2>div{
+    position: absolute;
+    bottom: 28px;
+}
+.fix .fix1 .fix1_2>div>a{
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 37px;
+    border-bottom: 1px solid #dddddd;
+    background: url("../images/red_coupon.png") no-repeat center;
+}
+.fix .fix1 .fix1_2>div .fix1-2-2{
+    background: url("../images/red_like.png") no-repeat center;
+}
+.fix .fix1 .fix1_2>div .fix1-2-3{
+    background: url("../images/red_feedback.png") no-repeat center;
+}
+.fix .fix1 .fix1_2>div>a:hover{
+    background: url("../images/white_coupon.png") no-repeat center #ff6699;
+}
+.fix .fix1 .fix1_2>div .fix1-2-2:hover{
+    background: url("../images/white_like.png") no-repeat center #ff6699;
+}
+.fix .fix1 .fix1_2>div .fix1-2-3:hover{
+    background: url("../images/white_feedback.png") no-repeat center #ff6699;
+}
+.fix .fix1 .fix1_2>div>a>span{
+    display: none;
+    position: absolute;
+    left: -84px;
+    top: 5px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 12px;
+    background-color: #666666;
+    color: white;
+    cursor: pointer;
+}
+.fix .fix1 .fix1_2>div .fix1-2-3 .feedback{
+    left: -72px;
+}
+.fix .fix1 .fix1_2>div>a>span em{
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    margin-top: -5px;
+    width: 5px;
+    height: 10px;
+    background: url("../images/black_triangle.png") no-repeat center;
+}
+.fix .fix1 .fix1_2>div>a:hover span{
+    display: block;
+}
+/*�ص�����*/
+.fix .fix1 .rTopBox{
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 36px;
+    height: 37px;
+    border: 1px solid #dddddd;
+    z-index: 9999999;
+    cursor: pointer;
+}
+.fix .fix1 .rTopBox span{
+    display: block;
+    width: 36px;
+    height: 37px;
+    background: url("../images/red_up_arrow.png") no-repeat center #f6f6f6;
+}
+.fix .fix1 .rTopBox strong{
+    display: block;
+    width: 24px;
+    height: 27px;
+    color: #ff6699;
+    padding: 5px 6px;
+    background-color: #f6f6f6;
+}
+.fix .fix1 .rTopBox:hover span{
+    display: none;
+}
+/*������logo*/
+.banner{
+    position: relative;
+    height: 120px;
+}
+.banner h1{
+    padding: 34px 0;
+}
+.banner .search{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -240px;
+}
+.banner .search .search1{
+    height: 24px;
+}
+.banner .search .search1 span{
+    display: block;
+    float: left;
+    width: 56px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    color: #666666;
+    background: #f2f2f2;
+}
+.banner .search .search1 span.bg{
+    color: white;
+    background: #ff6699;
+}
+.banner .search .search2 input[type=text]{
+    text-indent: 0.5em;
+    width: 446px;
+    height: 28px;
+    border: 2px solid #ff6699;
+    outline: none;
+}
+.banner .search .search2 input[type=button]{
+    width: 70px;
+    height: 32px;
+    background: url("../images/5e7c00ec264e857089caf7d7f742_24_20.ch.png") no-repeat center #ff6699;
+    outline: none;
+    cursor: pointer;
+}
+.banner .search .search2 ul{
+    display: none;
+    position: absolute;
+    border: 1px solid #dddddd;
+    z-index: 999;
+}
+.banner .search .search2 ul li{
+    width: 422px;
+    height: 24px;
+    line-height: 24px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 15px;
+    background-color: white;
+}
+.banner .search .search2 ul li em{
+    color: #666666;
+}
+.banner .search .search2 ul li div{
+    float: right;
+}
+.banner .search .search2 ul li div a{
+    color: #999999;
+}
+.banner .search .search2 ul li div a:hover{
+    color: #ff6699;
+}
+.banner .search .search3{
+    margin-top: 11px;
+}
+.banner .search .search3 a{
+    height: 23px;
+    padding-right: 5px;
+    color: #666666;
+}
+.banner .search .search3 a.pink{
+    color: #ff6699;
+}
+.banner .search .search3 a:hover{
+    color: #ff6699;
+}
+/*���ݵĵ���*/
+.contentNav{
+    width: 100%;
+    height: 49px;
+    border-bottom: 1px solid #ff6699;
+}
+.contentNav .ulBox{
+    height: 49px;
+}
+.contentNav .ulBox .one a{
+    float: left;
+    font-weight: 600;
+    font-size: 14px;
+    height: 47px;
+    line-height: 47px;
+    color: #333333;
+    margin-right: 10px;
+    padding: 0 15px;
+}
+.contentNav .ulBox .firstLi a{
+    color: #ff6699;
+    border-bottom: 2px solid #ff6699;
+}
+.contentNav .ulBox .lastLi a{
+    color: #ff6699;
+}
+.contentNav .ulBox .one a:hover{
+    color: #ff6699;
+    border-bottom: 2px solid #ff6699;
+}
+.contentNav .ulBox .more a{
+    display: block;
+    position: relative;
+    padding: 0 43px 0 17px;
+}
+.contentNav .ulBox .more a span{
+    display: inline-block;
+    position: absolute;
+    top: 44%;
+    right: 26px;
+    width: 0;
+    height: 0;
+    border: 3px solid transparent;
+    border-top: 3px solid #696A6A;
+}
+.contentNav .ulBox .more a:hover{
+    border-bottom: none;
+}
+.contentNav .ulBox .more a:hover span{
+    border-bottom: 3px solid #ff6699;
+    border-top: none;
+}
+.contentNav .ulBox .more a i{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 1px;
+    height: 16px;
+    background-color: #d6d7d8;
+}
+.contentNav .ulBox .more a ul{
+    display: none;
+    position: absolute;
+    top: 47px;
+    left: -28px;
+    width: 120px;
+    height: 210px;
+    border: 1px solid #f4f5f6;
+    border-top: none;
+    z-index: 1;
+}
+.contentNav .ulBox .more a:hover ul{
+    display: block;
+}
+.contentNav .ulBox .more a ul li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+    color: #333333;
+    background-color: white;
+}
+.contentNav .ulBox .more a ul li:hover{
+    color: #ff6699;
+    background-color: #f4f5f6;
+}
+.contentNav1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 66;
+}
+
+.contentBanner{
+    position: relative;
+    height: 878px;
+}
+.contentBanner .contentBannerL{
+    float: left;
+    width: 238px;
+    height: 572px;
+    background-color: white;
+}
+.contentBanner .contentBannerL ul li{
+    position: relative;
+    width: 198px;
+    height: 95px;
+    padding: 12px 20px 6px;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    z-index: 2;
+
+}
+.contentBanner .contentBannerL ul li h3{
+    height: 18px;
+}
+.contentBanner .contentBannerL ul li.firstLi{
+    border-top: 1px solid #e6e6e6;
+}
+.contentBanner .contentBannerL ul li h3 a{
+    font-size: 14px;
+    font-weight: bolder;
+    color: #ff6699;
+}
+.contentBanner .contentBannerL ul li .word{
+    width: 191px;
+    height: 72px;
+    line-height: 24px;
+    overflow: hidden;
+    padding-top: 5px;
+}
+.contentBanner .contentBannerL ul li .word a{
+    float: left;
+    line-height: 24px;
+    padding-right: 14px;
+    color: #666666;
+}
+.contentBanner .contentBannerL ul li .word a.red{
+    color: #ff6699;
+}
+.contentBanner .contentBannerL ul li .word a.last{
+    padding-right: 0;
+}
+.contentBanner .contentBannerL ul li:after{
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: -1px;
+    left: 20px;
+    width: 198px;
+    border-top: 1px dashed #e6e6e6;
+}
+.contentBanner .contentBannerL ul li.last{
+    height: 101px;
+    border-bottom: 1px solid #e6e6e6;;
+}
+.contentBanner .contentBannerL ul li.last:after{
+    border-top: none;
+}
+.contentBanner .contentBannerL ul li samp{
+    position: absolute;
+    right: 15px;
+    top: 48px;
+    font-size: 14px;
+    color: #999999;
+}
+.contentBanner .contentBannerL ul li:hover{
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    border-right: none;
+}
+.contentBanner .contentBannerL ul li:hover samp{
+    color: #ff6699;
+}
+.contentBanner .contentBannerL ul li:hover .wordRight{
+    display: block;
+}
+.contentBanner .contentBannerL ul li .wordRight{
+    display: none;
+    position: absolute;
+    top: -1px;
+    left: 238px;
+    width: 330px;
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    padding: 12px 20px 6px;
+    z-index: 1;
+    background-color: white;
+}
+.contentBanner .contentBannerL ul li .wordRight h2 a{
+    font-size: 14px;
+    font-weight: bolder;
+    color: #666666;
+    height: 18px;
+}
+.contentBanner .contentBannerL ul li .wordRight .list1{
+    width: 330px;
+    padding-bottom: 10px;
+}
+.contentBanner .contentBannerL ul li .wordRight h2 a:hover,.contentBanner .contentBannerL ul li .wordRight .list1 a:hover{
+    color: #ff6699;
+}
+
+.contentBanner .contentBannerR1{
+    position: relative;
+    float: left;
+    width: 960px;
+    height: 419px;
+    margin-left: 1px;
+    margin-bottom: 9px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.contentBanner .contentBannerR1 .lunBo{
+    width: 960px;
+    height: 419px;
+    border-bottom: 1px solid #f7f7f7;
+}
+.contentBanner .contentBannerR1 .lunBo>div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 960px;
+    height: 419px;
+    display: block;
+    z-index: 0;
+    opacity: 0;
+}
+.contentBanner .contentBannerR1 .lunBo .img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.contentBanner .contentBannerR1 .focus{
+    position: absolute;
+    left: 50%;
+    margin-left: -55.5px;
+    bottom: 20px;
+    z-index: 55;
+}
+.contentBanner .contentBannerR1 .focus li{
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin-right: 25px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+.contentBanner .contentBannerR1 .focus li.borderW{
+    background-color: rgba(255,255,255,0);
+}
+.contentBanner .contentBannerR1 a.left,.contentBanner .contentBannerR1 a.right{
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    width: 34px;
+    height: 44px;
+    z-index: 555;
+}
+.contentBanner .contentBannerR1 a.left{
+    left: 0;
+    background: url("../images/bnr_btn_left1.png") no-repeat;
+}
+.contentBanner .contentBannerR1 a.right{
+    right: 0;
+    background: url("../images/bnr_btn_right1.png") no-repeat;
+}
+.contentBanner .contentBannerR2 ul li{
+    float: left;
+    width: 182px;
+    height: 145px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.contentBanner .contentBannerR2 ul li img{
+    width: 182px;
+    height: 145px;
+}
+.contentBanner .contentBottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.contentBanner .contentBottom ul li{
+    float: left;
+    width: 285px;
+    height: 285px;
+    margin-right: 20px;
+}
+.contentBanner .contentBottom ul li.lastLi{
+    margin-right: 0;
+}
+.contentBanner .contentBottom ul li img{
+    width: 285px;
+    height: 285px;
+}
+
+.h2Title{
+    margin-top: 84px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content1{
+    height: 589px;
+}
+.content1 .contentLeft,.content1 .contentRight{
+    float: left;
+}
+.content1 .contentLeft{
+    width: 283px;
+    height: 589px;
+    margin-right: 20px;
+}
+.content1 .contentLeft>div,.content1 .contentLeft>div img{
+    width: 283px;
+    height: 297px;
+}
+.content1 .contentLeft>div,.content1 .contentLeft>a{
+    float: left;
+}
+.content1 .contentLeft>a{
+    display: inline-block;
+    border: 1px solid #EEEEEE;
+}
+.content1 .contentLeft>a,.content1 .contentLeft>a>img{
+    width: 140px;
+    height: 96px;
+}
+.content1 .contentRight{
+    width: 896px;
+    height: 589px;
+}
+.content1 .contentRight li{
+    float: left;
+}
+.content1 .contentRight li.firstLi,.content1 .contentRight li.firstLi a img{
+    width: 305px;
+    height: 589px;
+}
+.content1 .contentRight .sameLi{
+    border: 1px solid #EEEEEE;
+}
+.content1 .contentRight .sameLi,.content1 .contentRight .sameLi a img{
+    width: 294px;
+    height: 293px;
+}
+.content1 .contentLeft .aRight,.content1 .contentRight .liRight{
+    border-left: none;
+}
+.content1 .contentLeft .aTop,.content1 .contentRight .liTop{
+    border-top: none;
+}
+
+.content2{
+    height: 524px;
+}
+.content2 .divTop{
+    height: 284px;
+}
+.content2 .divTop a{
+    float: left;
+}
+.content2 .divTop .firstA{
+    width: 590px;
+    height: 284px;
+    padding-left: 0;
+}
+.content2 .divTop a {
+    padding-left: 19px;
+}
+.content2 .divTop .sameA,.content2 .divTop .sameA img{
+    width: 184px;
+    height: 284px;
+}
+.content2 .ulBottom{
+    height: 220px;
+    margin-top: 20px;
+}
+.content2 .ulBottom .liFirst{
+    float: left;
+    width: 245px;
+    height: 200px;
+    padding: 10px 20px;
+    margin-left: 0;
+    background-color: #f9f9f9;
+}
+.content2 .ulBottom .liFirst a{
+    float: left;
+    width: 81px;
+    height: 20px;
+    line-height: 20px;
+    color: #333333;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.content2 .ulBottom .liFirst a:hover{
+    color: #ff3366;
+}
+.content2 .ulBottom .liFirst .bgRed{
+    color: #ff3366;
+}
+.content2 .ulBottom .liSame{
+    float: left;
+    width: 285px;
+    height: 220px;
+    margin-left: 20px;
+}
+.content2 .ulBottom .liSame img{
+    width: 285px;
+    height: 220px;
+}
+
+.footer{
+    width: 100%;
+    height: 299px;
+    margin-top: 81px;
+    border-top: 1px solid #dddddd;
+    background-color: #f5f5f5;
+}
+.footer .fBox{
+    height: 299px;
+    /*background-color: red;*/
+}
+.footer .fBox .fTop{
+    height: 200px;
+    padding-top: 30px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.footer .fBox .fTop .fList{
+    float: left;
+    margin-right: 104px;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+.footer .fBox .fTop .fList h3{
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 28px;
+    color: #666666;
+}
+.footer .fBox .fTop .fList div{
+    margin-top: 12px;
+}
+.footer .fBox .fTop .fList div a{
+    display: block;
+    color: #666666;
+}
+.footer .fBox .fTop .fList div a:hover{
+    color: #ff3366;
+}
+.footer .fBox .fTop .fAbout div a em{
+    float: left;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-top: 4px;
+    margin-right: 5px;
+    background: url("../images/83e2e4569fca186be6a8e4286d0b_74_18.c5.png") no-repeat;
+}
+.footer .fBox .fTop .fAbout .qq a em{
+    background-position: -28px 0;
+}
+.footer .fBox .fTop .fAbout .weiBo a em{
+    background-position: -56px 0;
+}
+.footer .fBox .fTop .right{
+    float: right;
+    margin-right: 85px;
+    text-align: center;
+}
+.footer .fBox .fTop .right2{
+    margin-right: 55px;
+}
+.footer .fBox .fBottom{
+    height: 42px;
+    line-height: 22px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #666666;
+}
+.footer .fBox .fBottom a{
+    color: #666666;
+}
+.footer .fBox .fBottom a:hover{
+    color: #ff3366;
+}
+
+
+
+
+
